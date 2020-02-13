@@ -1,17 +1,50 @@
-.App {
-    text-align: center;
-    margin    : 0 auto;
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
 
+.App {
+  text-align: center;
+  padding: 0 36px;
+  max-width: 665px;
+  margin: 0 auto;
+}
+
+h1 {
+  text-align: left;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .item {
-    width       : 45%;
-    text-align  : left;
-    margin      : 4px 0;
-    padding-left: 8px;
-    cursor      : pointer;
+  width: 45%;
+  text-align: left;
+  margin: 4px 0;
+  padding-left: 8px;
+  cursor: pointer;
 }
 
 .item.completed {
-    text-decoration: line-through;
+  text-decoration: line-through;
+}
+
+.todolist {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  width: 100%;
+  margin: 0 auto;
+}
+
+form {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
 }

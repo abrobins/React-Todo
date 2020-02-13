@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import "../TodoComponents/Todo.css";
 
 class TodoForm extends Component {
   constructor() {
@@ -17,7 +18,7 @@ class TodoForm extends Component {
   handleSubmit = e => {
     e.preventDefault();
     this.props.addItem(e, this.state.item);
-    this.setState({ newItem: "" });
+    // this.setState({ item: "" });
   };
 
   render() {

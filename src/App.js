@@ -71,7 +71,7 @@ class App extends React.Component {
     console.log("rendering...");
     return (
       <div>
-        <div>
+        <div className="header">
           <h2>Welcome to your Todo App!</h2>
           <TodoForm addItem={this.addItem} />
         </div>
