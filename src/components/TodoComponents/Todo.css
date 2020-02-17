@@ -1,6 +1,6 @@
 html,
 body {
-  width: 100%;
+  width: 80%;
   height: 100%;
   margin: 0;
   padding: 0;
@@ -24,9 +24,14 @@ h1 {
 }
 
 .item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   width: 45%;
   text-align: left;
-  margin: 4px 0;
+  background: blue;
+  color: white;
+  margin: 8px 0;
   padding-left: 8px;
   cursor: pointer;
 }
@@ -39,12 +44,17 @@ h1 {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
-  width: 100%;
+  width: 80%;
   margin: 0 auto;
 }
 
 form {
-  width: 50%;
+  width: 80%;
   display: flex;
   justify-content: flex-end;
+}
+
+input {
+  border: 1px solid black;
+  border-radius: 5px;
 }
