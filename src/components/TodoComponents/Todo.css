@@ -1,0 +1,60 @@
+html,
+body {
+  width: 80%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  text-align: center;
+  padding: 0 36px;
+  max-width: 665px;
+  margin: 0 auto;
+}
+
+h1 {
+  text-align: left;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 45%;
+  text-align: left;
+  background: blue;
+  color: white;
+  margin: 8px 0;
+  padding-left: 8px;
+  cursor: pointer;
+}
+
+.item.completed {
+  text-decoration: line-through;
+}
+
+.todolist {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  width: 80%;
+  margin: 0 auto;
+}
+
+form {
+  width: 80%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+input {
+  border: 1px solid black;
+  border-radius: 5px;
+}
